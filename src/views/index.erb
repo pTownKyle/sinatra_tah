@@ -1,7 +1,22 @@
 <h1 class="text-3xl font-bold text-white"><%= @title %></h1>
-<div x-data="{ open: false }" class="mb-4">
+<div x-data="{ open: false }" class="my-4">
     <p x-show="open" class="p-4">Alpine.js is Live</p>
     <button @click="open = !open" class=" cursor-pointer p-2 bg-green-300 uppercase rounded">Toggle</button>
 </div>
+
+<button class="px-4 py-2 bg-blue-500 text-white rounded" hx-get="/demo" hx-target="#content" hx-credentials="include">
+    Load HTMX Content
+</button>
+
+<div id="content" class="mt-4">
+
+</div>
+
+<button class="px-4 py-2 bg-red-500 text-white rounded mt-4"
+    hx-get="/clear"
+    hx-target="body"
+    hx-swap="outerHTML">
+    Clear Session
+</button>
 
 
