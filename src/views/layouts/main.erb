@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= @title %></title>
+    <link href="/css/output.css" rel="stylesheet">
+    <script src="/js/alpine.min.js" defer></script>
+    <script src="/js/htmx.min.js" defer></script>
+</head>
+<body class="bg-blue-300 text-center min-h-dvh grid grid-rows-[auto_1fr_auto]">
+    <%# Partial For Header %>
+    <%= erb :'partials/header' %>
+    <main>
+        <%= yield %>  <!-- This is where page content will be inserted -->
+    </main>
+    <%# Partial For Footer %>
+    <%= erb :'partials/footer' %>
+</body>
+</html>

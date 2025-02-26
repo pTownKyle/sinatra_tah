@@ -1,0 +1,7 @@
+<h1 class="text-3xl font-bold text-white"><%= @title %></h1>
+<div x-data="{ open: false }" class="mb-4">
+    <p x-show="open" class="p-4">Alpine.js is Live</p>
+    <button @click="open = !open" class=" cursor-pointer p-2 bg-green-300 uppercase rounded">Toggle</button>
+</div>
+
+

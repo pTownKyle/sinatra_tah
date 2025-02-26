@@ -1,0 +1,25 @@
+{
+  "name": "sinatra_tah_stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch",
+    "dev": "concurrently \"npm:build:css\" \"ruby server.rb\"",
+    "copy:libs": "cp node_modules/htmx.org/dist/htmx.min.js public/js/ && cp node_modules/alpinejs/dist/cdn.min.js public/js/alpine.min.js",
+    "postinstall": "npm run copy:libs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.8",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.0.8"
+  },
+  "dependencies": {
+    "alpinejs": "^3.14.8",
+    "htmx.org": "^1.9.12"
+  }
+}

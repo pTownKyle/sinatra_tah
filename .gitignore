@@ -1,0 +1,52 @@
+# Ignore bundler dependencies
+/Gemfile.lock
+/vendor/bundle
+
+# Ignore node modules
+/node_modules
+/package-lock.json
+/npm-debug.log
+/yarn.lock
+
+# Ignore Tailwind output if you're building CSS
+/public/css/output.css
+
+# Ignore dotenv environment files (if used)
+/.env
+
+# Ignore Sinatra temporary files
+/tmp
+/log
+/pids
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore compiled Ruby files
+*.rbc
+/.sass-cache
+/.yardoc
+/_yardoc
+/coverage/
+/spec/reports/
+
+# Ignore Pry history
+/.pry_history
+
+# Ignore database files (if using SQLite for dev)
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore public assets cache (if applicable)
+/public/assets
+/public/system
+
+# Ignore compiled files (if you precompile assets)
+/public/compiled
+/public/build
